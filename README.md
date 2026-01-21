@@ -44,7 +44,7 @@ sudo ./arp -q <query_ip_address> -i <interface_name> //指定網卡
 
 3. Spoof
 當有人詢問 <target_ip_address> 時，回覆 <fake_mac_address> 給請求者 ：
-\```Bash
+```bash
 sudo ./arp <fake_mac_address> <target_ip_address>
 sudo ./arp <fake_mac_address> <target_ip_address> -i <interface_name> //指定網卡
-\```
+```
