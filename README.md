@@ -16,10 +16,10 @@ Spoof：當收到針對特定 IP 的請求時，回覆偽造的 MAC 位址。
 
 ### 編譯步驟
 
-\```bash
+```bash
 make clean
 make
-\```
+```
 編譯完成後，會產生執行檔
 
 ### 使用說明
@@ -27,20 +27,20 @@ make
 
 1. Sniffer
 監聽所有經過網卡的 ARP 封包 ：
-\```Bash
+```bash
 sudo ./arp -l -a
-\```
+```
 監聽與特定 IP 相關的 ARP 封包 ：
-\```Bash
+```bash
 sudo ./arp -l <filter_ip_address>
-\```
+```
 
 2. Query
 查詢特定 IP 位址的實體 MAC 位址 ：
-\```Bash
+```bash
 sudo ./arp -q <query_ip_address>
 sudo ./arp -q <query_ip_address> -i <interface_name> //指定網卡
-\```
+```
 
 3. Spoof
 當有人詢問 <target_ip_address> 時，回覆 <fake_mac_address> 給請求者 ：
